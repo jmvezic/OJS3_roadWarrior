@@ -2,7 +2,6 @@ ip="$(hostname -I|cut -f1 -d ' ')"
 read -sp "Enter the password you wish to have as MySQL root user: `echo $'\n> '`" DATABASE_PASS
 apt-get update
 apt-get --assume-yes upgrade
-apt-get -y remove --purge unscd
 apt-get -y install apache2
 apt-get -y install mariadb-server
 apt-get -y install htop
